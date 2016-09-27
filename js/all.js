@@ -24,6 +24,14 @@
 
     $(document).on('ready',function(){
 
+        if(winW>992){
+            $('.main-menu li').on('click', function (e) {
+                $(this).addClass('active').siblings().removeClass('active');
+
+            })
+        }
+
+
         $('.tabs-header').on('click', 'li:not(.active)', function() {
 
             var index_el = $(this).index();
