@@ -24,6 +24,8 @@
 
     $(document).on('ready',function(){
 
+        $(document).on("scroll", onScroll);
+
         if(winW>992){
             $('.main-menu li').on('click', function (e) {
                 $(this).addClass('active').siblings().removeClass('active');
@@ -73,10 +75,6 @@
                 }
             })
         }
-        
-        
-        
-
     });
 
 	$(function () {
