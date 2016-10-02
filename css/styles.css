@@ -2093,7 +2093,7 @@ a.a-btn {
   border: 1px solid #06B1E2;
   border-radius: 4px;
   letter-spacing: -.2px;
-  box-shadow: 0 3px 0 0 #a74305; }
+  box-shadow: 0 3px 0 0 #A3CB36; }
   a.a-btn:hover {
     box-shadow: none;
     color: #06B1E2;
@@ -2319,7 +2319,7 @@ a.a-btn {
 .tabs.event-block .e-speaker-wrap {
   display: inline-block;
   vertical-align: top;
-  width: 19%; }
+  width: 12%; }
   .tabs.event-block .e-speaker-wrap .e-img {
     border: 7px solid white;
     border-radius: 50%;
@@ -2476,7 +2476,7 @@ a.a-btn {
   font-size: 12px;
   padding: 20px 36px;
   border-radius: 4px;
-  box-shadow: 0 3px 0 0 #a74305; }
+  box-shadow: 0 3px 0 0 #A3CB36; }
   .form-1 .form-1-submit:hover {
     background-color: transparent;
     color: #06B1E2; }
@@ -2632,7 +2632,7 @@ a.a-btn {
     color: white;
     border: 1px solid #06B1E2;
     border-radius: 3px;
-    box-shadow: 0 3px 0 0 #a74305; }
+    box-shadow: 0 3px 0 0 #A3CB36; }
     .wpc-map-wrapper .form-submit:hover {
       background-color: transparent;
       color: #06B1E2;
