@@ -4,7 +4,7 @@
     /*============================*/
 	/* 01 - VARIABLES */
 	/*============================*/
-	
+
 	var swipers = [], winW, winH, winScr, _isresponsive, smPoint = 768, mdPoint = 992, lgPoint = 1200, addPoint = 1600, _ismobile = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i);
 
 
@@ -15,7 +15,7 @@
 		winW = $(window).width();
 		winH = $(window).height();
 	}
-    
+
 
 	/*=================================*/
 	/* 03 - FUNCTION ON DOCUMENT READY */
@@ -24,7 +24,7 @@
 
     $(document).on('ready',function(){
 
-        $(document).on("scroll", onScroll);
+        // $(document).on("scroll", onScroll);
 
         if(winW>992){
             $('.main-menu li').on('click', function (e) {
@@ -45,7 +45,7 @@
 
         $(".main-menu li a").mPageScroll2id();
 
-        
+
         function menu_responsive() {
 
             if( $(window).width() <= 992 ) {
@@ -109,7 +109,7 @@
 	/*============================*/
 	/* 04 - FUNCTION ON PAGE LOAD */
 	/*============================*/
-	
+
 	$(window).on('load', function(){
 
         $('.preload-wrap').fadeOut(1000);
@@ -120,7 +120,7 @@
 	/*==============================*/
 	/* 05 - FUNCTION ON PAGE RESIZE */
 	/*==============================*/
-    
+
 	function resizeCall(){
 		pageCalculations();
 		$('.swiper-container.initialized[data-slides-per-view="responsive"]').each(function(){
@@ -134,7 +134,7 @@
 				else $t.removeClass('pagination-hidden');
 				paginationSlice.show();
 			}
-		});	
+		});
 	}
 	if(!_ismobile){
 		$(window).resize(function(){
@@ -191,17 +191,17 @@
 
     });
 
-    
+
 	/*============================*/
 	/* DROPDOWN */
 	/*============================*/
-	
-	$('.nav-menu-icon a').on('click', function() { 
+
+	$('.nav-menu-icon a').on('click', function() {
 	  if ($('.navigation nav').hasClass('slide-menu')){
-		   $('.navigation nav').removeClass('slide-menu'); 
+		   $('.navigation nav').removeClass('slide-menu');
 		   $('.wrap').removeClass('hold');
 		   $('.center-menu').removeClass('act');
-		   $('.left-slide').removeClass('slide-menu'); 
+		   $('.left-slide').removeClass('slide-menu');
 		   $(this).removeClass('active');
 	  }else {
 		   $('.navigation nav').addClass('slide-menu');
@@ -212,8 +212,8 @@
 	  }
 		return false;
 	 });
-	
-	
+
+
 	$('nav > ul > li > a').on('click', function(){
 	  if ($(this).parent().find('.sub-menu').hasClass('act')){
 	      $(this).parent().find('.sub-menu').removeClass('act');
@@ -226,7 +226,7 @@
 	  }
 
 	});
-	
+
 	$('.sub-menu > li > a').on('click', function(){
 	  if ($(this).parent().find('.sub-menu').hasClass('act')){
 	      $(this).parent().find('.sub-menu').removeClass('act');
@@ -238,21 +238,21 @@
 	  }
 
 	});
-       
+
 
 	/***********************************/
 	/*WINDOW SCROLL*/
 	/**********************************/
-	
+
     $(window).on('scroll', function() {
 	   if ($(this).scrollTop() >= 80) {
 		   $('header').addClass('scroll');
 		}else{
 		   $('header').removeClass('scroll');
-		} 
+		}
 	});
-	
-	
+
+
 	/***********************************/
 	/*VIDEO POPUP*/
 	/**********************************/
@@ -279,11 +279,11 @@
 		  return false;
 	});
 
-    
+
     /***********************************/
 	/*BACKGROUND*/
 	/**********************************/
-    
+
     //sets child image as a background
     $('.s-back-switch').each(function(){
         var $img = $(this).find('.s-img-switch');
@@ -296,9 +296,9 @@
         	$img.hide();
         }
     });
-   
-  
-    
+
+
+
     /***********************************/
     /* LIGHTBOX */
     /**********************************/
@@ -306,8 +306,8 @@
       'showImageNumberLabel' : false,
         'disableScrolling' : true
     });
-    
-    
+
+
     /***********************************/
     /* MAGNIFIC POPUP */
     /**********************************/
@@ -317,7 +317,7 @@
     /***********************************/
 	/* 05 - POPUP */
 	/**********************************/
-    
+
     if ($('.img-popup').length){
         $('.img-popup').magnificPopup({
             type: 'image',
@@ -498,4 +498,3 @@ function initialize(_this) {
     });
 
 }
-

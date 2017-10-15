@@ -12,7 +12,16 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* GLOBAL SETTINGS */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------*/
+/*----------------------QUICK FIXES----------------------------*/
+.schedule {
+  margin: 2em;
+}
+.schedule li{
+  border-top: 1px dotted rgba(0, 0, 0, 0.3);
+  padding: 12px 0px;
+  font-size: 16px;
+}
+
 /*----------------------RESET--------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -118,8 +127,15 @@ button {
   padding-right: 0; }
 
 /* fonts */
+@font-face {
+	font-family: 'ostritch';
+	src:url('../fonts/ostrich-sans/webfonts/ostrich-rounded.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
-  font-family: 'Montserrat', serif;
+  font-family: 'ostrich', Fallback, sans-serif;
   overflow-x: hidden;
   color: #222;
   font-weight: 400; }
@@ -147,6 +163,22 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit; }
+
+.heading{
+  font-family: 'ostritch', sans-serif;
+  font-size:2em;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color:#00aeef;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.subheading{
+  font-size:1em;
+  font-weight: 100;
+  color:#00aeef;
+}
+
 
 /* extends */
 .a-trans, .a-banner::after {
@@ -853,7 +885,7 @@ a, .cut_order_block:before, .cut_order_image:before, .cut_order_image:after, .cu
 /*----------------------Header style 1----------------------*/
 .a-header {
   position: fixed;
-  padding-top: 23px;
+  padding-top: 1em;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -911,9 +943,9 @@ a, .cut_order_block:before, .cut_order_image:before, .cut_order_image:after, .cu
   height: inherit;
   vertical-align: middle;
   display: table-cell;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 14px;
-  letter-spacing: -.4px; }
+  letter-spacing: -.2px; }
 
 .a-header.scroll {
   background-color: rgba(0, 0, 0, 0.7);
@@ -1655,7 +1687,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f0640d;
+  background-color: #00aeef;
   animation: cssload-fold-thecube 2.76s infinite linear both;
   -o-animation: cssload-fold-thecube 2.76s infinite linear both;
   -ms-animation: cssload-fold-thecube 2.76s infinite linear both;
@@ -1784,7 +1816,7 @@ html {
   height: 80px;
   overflow: hidden; }
   .inner-wrap .logo img {
-    height: 43px;
+    height: 70%;
     width: auto; }
 .inner-wrap .navigation > nav > ul {
   float: left; }
@@ -1843,7 +1875,7 @@ html {
     background-color: rgba(45, 44, 44, 0.6); }
 
 .a-banner {
-  padding: 200px 0;
+  padding: 180px 0;
   color: white; }
   .a-banner .banner-heading .banner-icon {
     display: block;
