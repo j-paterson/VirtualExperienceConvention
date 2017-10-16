@@ -13,15 +13,14 @@
 /* GLOBAL SETTINGS */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------QUICK FIXES----------------------------*/
-.schedule {
-  margin: 0 2em 2em 2em;
-}
 .schedule li:nth-child(even){background: #d9e5ea}
 .schedule li{
   padding: 1em 3em;
   font-size: 16px;
 }
-
+.schedule ul li>p{
+  font-weight:100;
+}
 /*----------------------RESET--------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -2943,6 +2942,9 @@ a.a-btn {
   .navigation nav > ul > li {
     margin: 0 25px 0 0; } }
 @media (min-width: 993px) {
+  .schedule {
+    margin: 0 2em 2em 2em;
+  }
   .wpc-navigation.navigation .main-menu li > a {
     position: relative; }
     .wpc-navigation.navigation .main-menu li > a::before {
