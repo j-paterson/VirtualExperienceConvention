@@ -14,11 +14,11 @@
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------QUICK FIXES----------------------------*/
 .schedule {
-  margin: 2em;
+  margin: 0 2em 2em 2em;
 }
+.schedule li:nth-child(even){background: #d9e5ea}
 .schedule li{
-  border-top: 1px dotted rgba(0, 0, 0, 0.3);
-  padding: 12px 0px;
+  padding: 1em 3em;
   font-size: 16px;
 }
 
