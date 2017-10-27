@@ -15,11 +15,17 @@
 /*----------------------QUICK FIXES----------------------------*/
 .schedule li:nth-child(even){background: #d9e5ea}
 .schedule li{
-  padding: 1em 3em;
-  font-size: 16px;
+  padding: 1em 1em;
 }
 .schedule ul li>p{
   font-weight:100;
+}
+h2{
+  font-size:1.2em !important;
+  font-weight: 600;
+}
+.pull-right{
+  font-align: right;
 }
 /*----------------------RESET--------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,900);
@@ -2287,11 +2293,12 @@ a.a-btn {
     bottom: 8px;
     right: 8px;
     left: 8px;
-    background-color: white;
-    padding: 25px 0;
+    background-color: rgba(0,0,0, 0.4);
+    padding: 10px 0;
     text-align: center;
     transition: all 300ms ease-in-out; }
     .speaker-wrapper .speaker-descr .title {
+      color:white;
       margin-bottom: 5px; }
     .speaker-wrapper .speaker-descr .sub-title {
       color: #ADADAD;
